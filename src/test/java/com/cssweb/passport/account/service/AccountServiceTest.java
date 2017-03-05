@@ -1,15 +1,10 @@
-package com.cssweb.account.service;
+package com.cssweb.passport.account.service;
 
-import com.cssweb.account.pojo.Account;
-import com.cssweb.account.service.AccountService;
-import org.junit.Before;
+import com.cssweb.passport.account.pojo.Account;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
@@ -25,7 +20,7 @@ public class AccountServiceTest {
     @Test
     public void selectAllAccount()
     {
-        List<Account> accounts = accountService.selectAll();
+        List<Account> accounts = accountService.selectAllAccounts();
         for (Account account : accounts)
         {
             System.out.println("account = " + account.getUserName());

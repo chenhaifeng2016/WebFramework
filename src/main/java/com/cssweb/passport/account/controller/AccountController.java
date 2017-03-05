@@ -1,7 +1,7 @@
-package com.cssweb.account.controller;
+package com.cssweb.passport.account.controller;
 
-import com.cssweb.account.pojo.Account;
-import com.cssweb.account.service.AccountService;
+import com.cssweb.passport.account.pojo.Account;
+import com.cssweb.passport.account.service.AccountService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +24,7 @@ public class AccountController {
     @RequestMapping(value = "selectAllAccount")
     public String selectAll()
     {
-        List<Account> accounts = accountService.selectAll();
+        List<Account> accounts = accountService.selectAllAccounts();
 
         logger.info("select account success");
         return "success";

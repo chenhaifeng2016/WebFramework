@@ -1,4 +1,4 @@
-package com.cssweb.account.controller;
+package com.cssweb.passport.account.controller;
 
 /**
  * Created by chenh on 2017/3/5.

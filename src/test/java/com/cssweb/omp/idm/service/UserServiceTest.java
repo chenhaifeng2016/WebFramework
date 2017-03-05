@@ -1,7 +1,5 @@
 package com.cssweb.omp.idm.service;
 
-import com.cssweb.account.pojo.Account;
-import com.cssweb.account.service.AccountService;
 import com.cssweb.omp.idm.pojo.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,7 +20,7 @@ public class UserServiceTest {
     @Test
     public void selectAllAccount()
     {
-        List<User> users = userService.selectAll();
+        List<User> users = userService.selectAllUsers();
         for (User user : users)
         {
             System.out.println("user = " + user.getUserName());

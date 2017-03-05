@@ -2,13 +2,11 @@ package com.cssweb.omp.idm.service;
 
 
 
-import com.cssweb.account.pojo.Account;
 import com.cssweb.omp.idm.mapper.UserMapper;
 import com.cssweb.omp.idm.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
@@ -20,9 +18,9 @@ public class UserService{
     @Autowired
     UserMapper userMapper;
 
-    public List<User> selectAll()
+    public List<User> selectAllUsers()
     {
-        return userMapper.selectAll();
+        return userMapper.selectAllUsers();
     }
 
     public User select(long id)

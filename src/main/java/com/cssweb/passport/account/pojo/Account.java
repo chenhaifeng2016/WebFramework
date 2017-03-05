@@ -1,4 +1,4 @@
-package com.cssweb.account.pojo;
+package com.cssweb.passport.account.pojo;
 
 import java.io.Serializable;
 

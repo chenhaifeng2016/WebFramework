@@ -1,12 +1,11 @@
-package com.cssweb.account.service;
+package com.cssweb.passport.account.service;
 
-import com.cssweb.account.mapper.AccountMapper;
-import com.cssweb.account.pojo.Account;
+import com.cssweb.passport.account.mapper.AccountMapper;
+import com.cssweb.passport.account.pojo.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -19,9 +18,9 @@ public class AccountService {
     @Autowired
     AccountMapper accountMapper;
 
-    public List<Account> selectAll()
+    public List<Account> selectAllAccounts()
     {
-        return accountMapper.selectAll();
+        return accountMapper.selectAllAccounts();
     }
 
     public Account login(String userName)

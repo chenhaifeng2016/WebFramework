@@ -1,7 +1,7 @@
-1.去掉mybatis的xml形式的配置文件
-2.完善log4j2.xml
 3.补齐测试技术
 4.测试换成TestNG
+2.完善log4j2.xml
+
 5.文件上传
 6.分页查询
 7.异常处理
@@ -17,7 +17,7 @@ Tomcat
 servlet, jsp, el的开发包版本要与tomcat版本一致
 
 
-JSON + SpringMVC + Spring + MyBatis + Druid + Log4j2 + SpringSession + JUNIT/TestNG + CommonsFileUpload
+SpringMVC + Spring + MyBatis + Druid + Log4j2 + SpringSession + JUNIT/TestNG + CommonsFileUpload + JSON
 
 
 spring
