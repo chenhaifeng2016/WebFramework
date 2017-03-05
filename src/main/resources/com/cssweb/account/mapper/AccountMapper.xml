@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cssweb.account.mapper.AccountMapper">
+
+    <resultMap id="accountResultMap" type="com.cssweb.account.pojo.Account">
+        <result column="Username" property="userName"/>
+    </resultMap>
+
+    <select id="selectAll"  resultMap="accountResultMap" >
+        SELECT * FROM Account
+    </select>
+
+    <select id="login" parameterType="String" resultType="com.cssweb.account.pojo.Account" >
+        SELECT * FROM Account WHERE UserName='chf'
+    </select>
+
+</mapper>
